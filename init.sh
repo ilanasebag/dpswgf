@@ -1,0 +1,10 @@
+python3.9 -m pip install torch
+python3.9 -m pip install torchvision
+python3.9 -m  pip install tqdm
+python3.9 -m  pip install scikit-learn
+python3.9 -m  pip install matplotlib
+python3.9 -m  pip install pyyaml 
+python3.9 -m pip install torchmetrics
+python3.9 -m pip insall Torch-fidelity
+python3.9 -m pip install requests
+python3.9 -m pip install torch-fidelity

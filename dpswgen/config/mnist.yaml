@@ -1,0 +1,27 @@
+generative_model:
+  image_width: 32
+  sigma_noise: 0.00000001
+  delta: 0.00001
+
+data:
+  name: mnist
+  ratio_val: 0.05
+  image_size: 32
+  num_channels: 1
+
+optim:
+  batch_size: 250
+  lr: 0.001
+  device: 'cuda'
+  num_projections: 70
+  iters: 35
+
+autoencoder:
+  loss: mse
+  latent_size: 8
+  encoder:
+    name: liutkus
+    width: 64
+  decoder:
+    name: liutkus
+    width: 64

@@ -1,0 +1,32 @@
+
+generative_model:
+  image_width: 64
+  sigma_noise: 0.00000001
+  delta: 0.000001
+  hidden_chan: 64
+
+data:
+  name: celeba
+  ratio_val: 0.05
+  image_size: 64
+  num_channels: 3
+
+
+
+optim:
+  batch_size: 250
+  lr: 0.001
+  device: 'cuda'
+  num_projections: 250
+  iters: 30
+
+
+autoencoder:
+  loss: mse
+  latent_size: 48
+  encoder:
+    name: dcgan
+    width: 64
+  decoder:
+    name: dcgan
+    width: 64

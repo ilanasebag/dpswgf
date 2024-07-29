@@ -1,0 +1,38 @@
+autoencoder:
+  loss: mse
+  latent_size: 8
+  encoder:
+    name: liutkus
+    width: 64
+  decoder:
+    name: liutkus
+    width: 64
+
+data:
+  name: mnist
+  ratio_val: 0.00001
+  image_size: 32
+
+optim:
+  batch_size: 250
+  lr: 0.001 #0.001
+  weight_decay: 0
+  num_steps: 1000000 
+  val_freq: 1000
+  val_iter: 10
+
+
+flow:
+  num_steps: 1500
+  num_projs: 70 #31
+  num_sub_projs: 25
+  num_percentiles: 30000
+  dt: 3
+  reg: 0 
+  epsilon: 5
+  delta: 0.00001
+  val_freq: 100
+  resample_thetas: True
+  num_steps_resampling: 35
+  sigma_noise: 0.000001
+
