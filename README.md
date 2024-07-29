@@ -1,5 +1,8 @@
 # Differentially Private Gradient Flow based on the Sliced Wasserstein Distance
 
+Official implementation of the paper Differentially Private Gradient Flow based on the Sliced
+Wasserstein Distance (Ilana Sebag, Muni Sreenivas Pydi, Jean-Yves Franceschi, Alain Rakotomamonjy, Mike Gartrell, Jamal Atif, Alexandre Allauzen): [Preprint](https://arxiv.org/abs/2312.08227).
+
 
 In this project, we introduce a novel differentially private generative modeling approach based on a
 gradient flow in the space of probability measures. To this end, we define the gradient flow
@@ -23,6 +26,8 @@ This repository contains two folders:
 
 
 ### Running the project
+
+__Requirements__: See init.sh
 
 To maintain a suitably low input space dimension, in order to mitigate the curse of dimensionality and reduce computational cost, DPSWflow(-r) and DPSWgen are preceded by an autoencoder. Subsequently, they take the latent space of the autoencoder as the input space, and ensure differential privacy using the DP gradient flow / generator. Therefore, we first have to train this auto-encoder
 
