@@ -16,7 +16,9 @@ model, offering a promising alternative.
 ### Overview of the repository
 
 This repository contains two folders: 
+
 • DPSWflow (which contains both versions of our mechanism: DPSWflow and DPSWflow-r): DP SW gradient flow.
+
 • DPSWgen: generator based model trained with a DP loss (the DP SW).
 
 
